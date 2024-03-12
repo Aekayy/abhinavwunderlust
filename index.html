@@ -6,7 +6,7 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Wunderlust Travel Logo">
+        <img src="logo-M.png" alt="Wunderlust Travel Logo">
         <h1>Let Wunderlust Travel help you plan the trip of your dreams!</h1>
     </header>
     <nav>
@@ -21,9 +21,15 @@
         <section id="majorca">
             <h2>Majorca</h2>
             <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-            <img src="majorca-waves.png" alt="Waves in Majorca">
-            <img src="majorca-beach.png" alt="Beach in Majorca">
-            <img src="majorca-cove.png" alt="Cove in Majorca">
+            <picture>
+                <source media="(max-width: 320px)" srcset="path/to/majorca-image-320w.jpg">
+                <source media="(max-width: 768px)" srcset="path/to/majorca-image-780w.jpg">
+                <source media="(max-width: 1024px)" srcset="path/to/majorca-image-1024w.jpg">
+                <img src=".jpg" alt="Majorca scenic view">
+            </picture>
+            <img src="majorca-waves-L.png" alt="Waves in Majorca">
+            <img src="majorca-beach-L.png" alt="Beach in Majorca">
+            <img src="majorca-cove.L.png" alt="Cove in Majorca">
         </section>
         
         <section id="plan-your-trip">
@@ -73,7 +79,6 @@
                 <img src="miranda-blake.png" alt="Miranda Blake">
                 <p>“I traveled here for business, but my stay was extended. Now it is my home.”</p>
             </article>
-            <!-- Additional testimonials here -->
         </section>
         
         <section id="about-your-destination">
@@ -124,7 +129,7 @@
         </section>
     </main>
     <footer>
-        <!-- Footer content here -->
+        Footer content
     </footer>
 </body>
 </html>
