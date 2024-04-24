@@ -127,6 +127,50 @@
                 <p>Population: [Population data]</p>
             </div>
         </section>
+         <section>
+                    Contact Us
+                    <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+                        <label for="fName">First Name<span>*</span></label>
+                        <input type="text" name="fName" id="fName" autocomplete="given-name" required>
+                        <label for="lName">Last Name<span>*</span></label>
+                        <input type="text" name="lName" id="lName" autocomplete="family-name" required>
+                        <fieldset>
+                            <legend>Contact Method<span>*</span></legend>
+                            <input type="radio" name="contactPref" id="prefEmail" required>
+                            <label for="prefEmail">Email</label>
+                            <input type="radio" name="contactPref" id="prefText">
+                            <label for="prefText">Text</label>
+                            <input type="radio" name="contactPref" id="prefPhone">
+                            <label for="prefPhone">Phone</label>
+                        </fieldset>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" autocomplete="email">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" autocomplete="tel">
+                        <label for="destination">Destination<span>*</span></label>
+                        <select name="destination" id="destination" required>
+                            <option value="">Choose an Option</option>
+                            <option value="barcelona">Barcelona</option>
+                            <option value="granada">Granada</option>
+                            <option value="ibiza">Ibiza</option>
+                            <option value="madrid">Madrid</option>
+                            <option value="majora">Majora</option>
+                            <option value="seville">Seville</option>
+                            <option value="tenerife">Tenerife</option>
+                            <option value="valencia">Valencia</option>
+                        </select>
+                        <label for="travelTime">Travel Time<span>*</span></label>
+                        <select name="travelTime" id="travelTime" required>
+                            <option value="">Choose an Option</option>
+                            <option value="fall">Fall</option>
+                            <option value="winter">Winter</option>
+                            <option value="spring">Spring</option>
+                            <option value="summer">Summer</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                        <input type="submit" name="mySubmit" id="mySubmit" value="Submit Form">
+                    </form>
+                </section>
     </main>
     <footer>
         Footer content
