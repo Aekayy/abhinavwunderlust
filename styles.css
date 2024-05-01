@@ -79,8 +79,7 @@ summary,
 time,
 mark,
 audio,
-video 
-{
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -89,7 +88,7 @@ video
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset */
+/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -106,6 +105,11 @@ section {
 
 body {
   line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
 }
 
 blockquote,
@@ -126,10 +130,6 @@ table {
   border-spacing: 0;
 }
 
-ol,ul {
-  list-style: none;
-}
-
 .sr-only {
   position: absolute;
   left: -10000px;
@@ -139,24 +139,33 @@ ol,ul {
   overflow: hidden;
 }
 
-/* Colors */
+/* Brand Colors */
 :root {
-  --color-blue: #499BD2;
-  --color-light-gray: #EAEAEA;
   --color-yellow: #F6D64A;
-  --color-purple: #9B26B0;
-  --color-dark-gray: #222222;
   --color-teal: #55BCD5;
-  --color-black: #000000;
+  --color-purple: #9B26B0;
+  --color-blue: #499BD2;
+  --color-dark-gray: #222222;
+  --color-light-gray: #EAEAEA;
   --color-white: #FFFFFF;
+  --color-black: #000000;
 }
 
-/* All the fonts */
-h1, h2, h3 {
+/* Fonts */
+h1,
+h2,
+h3 {
   font-family: 'Molle', sans-serif;
 }
 
-h4, p, q, small, nav, button, form, a {
+h4,
+p,
+q,
+small,
+nav,
+button,
+form,
+a {
   font-family: 'Montserrat', monospace;
 }
 
@@ -167,7 +176,8 @@ h1 {
   margin-bottom: 5px;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 36px;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -175,10 +185,10 @@ h2, h3 {
 }
 
 h4 {
-  font-size: 20px;
-  padding-top: 12px;
+  font-size: 24px;
+  padding-top: 10px;
   padding-bottom: 5px;
-  font-weight: 950;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -186,7 +196,7 @@ p {
   line-height: 1.5em;
 }
 
-/* All the styles */
+/* Styles */
 
 #img-grid {
   display: flex;
@@ -195,9 +205,10 @@ p {
 
 #img-grid img {
   width: 100%;
-  margin-bottom: 0em;
+  margin-bottom: 1em;
 }
 
+/* Skip Link */
 #skip {
   background: #e77e23;
   height: 30px;
@@ -212,8 +223,9 @@ p {
   transform: translateY(0%);
 }
 
+/* Header */
 header {
-  --logo-height: 200px;
+  --logo-height: 100px;
   --logo-width: 230px;
   --logo-width-large: 300px;
   --logo-name-height: 10em;
@@ -227,7 +239,7 @@ header {
   height: calc(var(--logo-height) + var(--logo-name-height));
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
   header img {
     position: absolute;
     width: auto;
@@ -336,7 +348,7 @@ header {
   #testimonials,
   #about,
   #contact {
-    padding: 0em 10px;
+    padding: 1em 20px;
   }
 
   #plan img {
@@ -344,11 +356,11 @@ header {
   }
 
   #img-grid {
-    margin: 0 0px;
+    margin: 0 -20px;
   }
 
   #testimonials div section {
-    width: 100%;
+    width: 75%;
     margin-bottom: 1em;
   }
 
@@ -374,8 +386,8 @@ header {
 @media (min-width: 768px) {
 
   header {
-    padding-top: 10px;
-    height: calc( var(--logo-height) + 30px);
+    padding-top: 40px;
+    height: calc( var(--logo-height) + 60px);
     flex-wrap: wrap;
     overflow: hidden;
   }
@@ -394,7 +406,7 @@ header {
   }
 
   header p {
-    width: calc(100% - var(--logo-width) - 10px);
+    width: calc(100% - var(--logo-width) - 60px);
     position: relative;
     left: var(--logo-width);
   }
@@ -430,14 +442,16 @@ header {
   }
 
   #menu-toggle input,
-  #menu-toggle label 
-  {
+  #menu-toggle label {
     display: none;
     visibility: hidden;
   }
 
-  #intro, #plan, #testimonials, #about, #contact
-  {
+  #intro,
+  #plan,
+  #testimonials,
+  #about,
+  #contact {
     padding: 1em 60px;
   }
 
@@ -452,11 +466,11 @@ header {
   }
 
   #img-grid picture {
-    width: 500%;
+    width: 100%;
   }
 
   #img-grid picture img {
-    width: 500%;
+    width: 100%;
   }
 
   #plan section {
@@ -493,14 +507,14 @@ header {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1201px) {
 
   #intro,
   #plan,
   #testimonials,
   #about,
   #contact {
-    padding: 0em 100px;
+    padding: 1em 120px;
   }
 
   header {
@@ -525,15 +539,15 @@ header {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 50vw;
+    height: 30vw;
   }
 
   #intro>div {
-    width: calc(50% - 100px);
+    width: calc(50% - 120px);
   }
 
   #img-grid img {
-    height: 50vw;
+    height: 13vw;
   }
 
   #plan section {
@@ -598,10 +612,13 @@ header {
 
 q {
   quotes: "“" "”" "‘" "’";
+  /* Sets the type of quotation marks */
   font-style: italic;
+  /* Italicize the quote text */
   margin: 0;
 }
 
+/* Optional: Change the color and add content before and after the quote for additional styling */
 q:before {
   content: open-quote;
   color: #555;
@@ -731,6 +748,7 @@ fieldset>label {
   margin-top: 0.5em;
   text-transform: capitalize;
   font-weight: 200;
+  /* Prevents text selection */
 }
 
 #selects select {
