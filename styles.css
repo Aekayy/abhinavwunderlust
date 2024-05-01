@@ -494,14 +494,14 @@ header {
   }
 }
 
-@media (min-width: 1500px) (min-height: 800px) {
+@media (min-width: 1500px) {
 
   #intro,
   #plan,
   #testimonials,
   #about,
   #contact {
-    padding: 1em 120px;
+    padding: 0em 100px;
   }
 
   header {
