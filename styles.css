@@ -462,7 +462,7 @@ header {
   }
 
   #img-grid img {
-    width: 100%;
+   width: calc(50% - 0px);
   }
 
   #img-grid picture {
