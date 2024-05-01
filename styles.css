@@ -213,7 +213,7 @@ p {
 }
 
 header {
-  --logo-height: 100px;
+  --logo-height: 200px;
   --logo-width: 230px;
   --logo-width-large: 300px;
   --logo-name-height: 10em;
