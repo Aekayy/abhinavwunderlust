@@ -348,7 +348,7 @@ header {
   #testimonials,
   #about,
   #contact {
-    padding: 1em 20px;
+    padding: 1em;
   }
 
   #plan img {
@@ -612,13 +612,10 @@ header {
 
 q {
   quotes: "“" "”" "‘" "’";
-  /* Sets the type of quotation marks */
   font-style: italic;
-  /* Italicize the quote text */
   margin: 0;
 }
 
-/* Optional: Change the color and add content before and after the quote for additional styling */
 q:before {
   content: open-quote;
   color: #555;
@@ -764,12 +761,9 @@ fieldset>label {
 
 #selects select {
   background-image: url('images/arrow.svg');
-  /* Path to custom arrow icon */
   background-repeat: no-repeat;
   background-position: right 10px center;
-  /* Positioning the icon to the right */
   background-size: 24px 24px;
-  /* Sizing the icon appropriately */
 }
 
 footer a {
