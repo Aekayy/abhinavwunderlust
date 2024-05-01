@@ -239,13 +239,13 @@ header {
   height: calc(var(--logo-height) + var(--logo-name-height));
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px){
   header img {
     position: absolute;
     width: auto;
     top: 1vh;
     left: 0;
-    height: var(--logo-height);
+    height: auto;
   }
 
   header nav {
