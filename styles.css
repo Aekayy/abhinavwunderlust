@@ -536,10 +536,8 @@ header {
   }
 
   #intro {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 30vw;
+    object-fit: fill;
+    height: 50%;
   }
 
   #intro>div {
