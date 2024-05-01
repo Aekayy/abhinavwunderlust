@@ -161,16 +161,16 @@ h4, p, q, small, nav, button, form, a {
 }
 
 h1 {
-  font-size: 50px;
-  padding-top: 12px;
+  font-size: 48px;
+  padding-top: 10px;
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
 
 h2, h3 {
-  font-size: 38px;
+  font-size: 36px;
   padding-top: 10px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   margin-top: 1em;
 }
 
