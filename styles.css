@@ -572,7 +572,6 @@ header {
 #plan div {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 #plan section {
