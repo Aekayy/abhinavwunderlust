@@ -541,10 +541,6 @@ header {
     height: 50%;
     display: flex;
   }
- 
-  #intro-content {
-    width: 70%;
-  }
 
   #img-grid img {
     height: 20vh;
