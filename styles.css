@@ -352,7 +352,7 @@ header {
   }
 
   #plan img {
-    padding: 0 2em;
+    padding: 0 1em;
   }
 
   #img-grid {
@@ -452,7 +452,7 @@ header {
   #testimonials,
   #about,
   #contact {
-    padding: 1em 60px;
+    padding: 1em 100px;
   }
 
   #img-grid {
@@ -514,7 +514,7 @@ header {
   #testimonials,
   #about,
   #contact {
-    padding: 1em 120px;
+    padding: 1em 100px;
   }
 
   header {
@@ -551,7 +551,7 @@ header {
   }
 
   #plan section {
-    width: 200px;
+    width: 100px;
   }
 
   #testimonials div section {
@@ -586,7 +586,7 @@ header {
   align-items: center;
   background-color: var(--color-teal);
   margin: 1em;
-  padding: 1em 2rem;
+  padding: 1em 1rem;
   border-radius: 5px;
   border: 2px solid var(--color-white);
   height: 220px;
