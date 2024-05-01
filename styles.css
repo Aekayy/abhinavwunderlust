@@ -545,11 +545,7 @@ header {
   #img-grid img {
     height: 20vh;
   }
-
-  #plan section {
-    width: 100px;
-  }
-
+  
   #testimonials div section {
     width: 300px;
   }
@@ -572,7 +568,6 @@ header {
 #plan div {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 #plan section {
